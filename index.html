@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Pages 一頁式介紹</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+        line-height: 1.7;
+        background: #f5f7fb;
+        color: #1f2937;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 20px 64px;
+      }
+      h1,
+      h2 {
+        line-height: 1.3;
+      }
+      .hero {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+      }
+      .card {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+      }
+      code {
+        background: #e5e7eb;
+        padding: 0.1rem 0.35rem;
+        border-radius: 6px;
+      }
+      footer {
+        margin-top: 40px;
+        font-size: 0.92rem;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1>GitHub Pages 是什麼？</h1>
+        <p>
+          GitHub Pages 是 GitHub 提供的靜態網站託管服務，可以直接把儲存庫內容部署成網站，
+          非常適合做個人履歷、專案文件、活動頁面或教學內容。
+        </p>
+      </section>
+
+      <section>
+        <h2>主要特色</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>免費託管</h3>
+            <p>公開儲存庫可免費使用，快速把內容上線。</p>
+          </article>
+          <article class="card">
+            <h3>版本控制整合</h3>
+            <p>透過 Git 管理網站內容，每次更新都有紀錄。</p>
+          </article>
+          <article class="card">
+            <h3>自動部署</h3>
+            <p>推送到指定分支後，GitHub 會自動重新發布網站。</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>快速建立步驟</h2>
+        <ol>
+          <li>在儲存庫根目錄建立 <code>index.html</code>。</li>
+          <li>前往儲存庫 <strong>Settings → Pages</strong>。</li>
+          <li>選擇部署來源（例如 <code>main</code> 分支根目錄）。</li>
+          <li>儲存後等待數十秒，取得網站網址並開啟確認。</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>常見用途</h2>
+        <ul>
+          <li>專案說明文件（Docs）</li>
+          <li>作品集或履歷頁</li>
+          <li>簡單產品 Landing Page</li>
+          <li>課程與教學筆記展示</li>
+        </ul>
+      </section>
+
+      <footer>
+        本頁為 GitHub Pages 單頁示範，可直接部署於此儲存庫。
+      </footer>
+    </main>
+  </body>
+</html>
